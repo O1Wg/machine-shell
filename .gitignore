@@ -1,1 +1,7 @@
+# complied program
+/sadaf
+*.o
 
+# debugging leftovers
+core
+vgcore.*
