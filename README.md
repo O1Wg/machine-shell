@@ -6,7 +6,7 @@ Part of [machine](https://github.com/O1Wg/machine), a year of rebuilding the sta
 
 ## Roadmap
 
-- [ ] Builds with `make`
+- [X] Builds with `make`
 - [ ] REPL loop: `sadaf>` prompt, quits on `exit` and Ctrl-D
 - [ ] Runs commands with `fork` and `execvp`
 - [ ] Tests and CI
