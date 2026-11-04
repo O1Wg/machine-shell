@@ -7,7 +7,7 @@ Part of [machine](https://github.com/O1Wg/machine), a year of rebuilding the sta
 ## Roadmap
 
 - [X] Builds with `make`
-- [ ] REPL loop: `sadaf>` prompt, quits on `exit` and Ctrl-D
+- [X] REPL loop: `sadaf>` prompt, quits on `exit` and Ctrl-D
 - [ ] Runs commands with `fork` and `execvp`
 - [ ] Tests and CI
 - [ ] Built-ins: `cd`, `exit`
