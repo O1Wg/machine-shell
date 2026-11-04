@@ -1,12 +1,38 @@
-// Sadaf is alive now and is answering
-#include <stdio.h>
+/* Sadaf (صدف) - Adding REPL loop and prompt and other stuff*/
+#define _POSIX_C_SOURCE 200809L 
 
-int main() {
-    char input[100];
+#include <stdio.h> // includes: getline(), printf(), fputs(), fflush()
+#include <stdlib.h> // includes: free()
+#include <string.h> // includes: strcmp()
+#include <unistd.h> // includes: isatty(), STDIN_FILENO
 
-    printf("sadaf> ");
-    scanf("%99s", input);
-    printf("you typed: %s\n", input);
+#define PROMPT "sadaf> "
 
-    return 0;
+int main (void)
+{
+    char *line = NULL;
+    size_t cap = 0;
+    ssize_t len;
+    int interactive = isatty(STDIN_FILENO);
+
+    for (;;) {
+        if (interactive){
+            fputs(PROMPT, stdout);
+            fflush(stdout);
+        }
+        len = getline (&line, &cap, stdin);
+        if (len == -1) {
+            if (interactive){
+             putchar('\n');
+             break;
+            }
+        }
+        if (len > 0 && line[len - 1] == '\n')
+        line[--len] = '\0';
+
+        if (strcmp(line, "exit") == 0)
+        break;
+    }
+    free(line);
+    return 0; // Return success finally. Thank god it worked.
 }
