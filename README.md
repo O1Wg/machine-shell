@@ -1,6 +1,16 @@
 # Sadaf (صدف)
 
 A Unix shell written from scratch in C. *Sadaf* means seashell in Arabic.
+```text
+        .-.-.-.-.
+     .-' \ \|/ / '-.     ____      _     ____      _     _____
+    / \ \ \ | / / / \   / ___|    / \   |  _ \    / \   |  ___|
+   |\  \ \ \|/ / /  /|  \___ \   / _ \  | | | |  / _ \  | |_
+    \ \  \ \|/ /  / /    ___) | / ___ \ | |_| | / ___ \ |  _|
+     '.\  \ | /  /.'    |____/ /_/   \_\|____/ /_/   \_\|_|
+        '._\|/_.'
+         <_____>        a shell, from scratch
+```
 
 Part of [machine](https://github.com/O1Wg/machine), a year of rebuilding the stack from scratch, one project at a time.
 
